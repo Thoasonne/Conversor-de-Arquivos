@@ -74,10 +74,10 @@
         <span class="logo-icon">⚡</span>
         <span class="logo-text">ConverteAqui</span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#converters">Converters</a>
-        <a href="#features">Features</a>
-        <a href="#faq">FAQ</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#converters">Conversores</a>
+        <a href="#features">Recursos</a>
+        <a href="#faq">Perguntas Frequentes</a>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -97,7 +97,7 @@
       <div class="hero-badge">🔒 100% no Navegador · Sem Upload · Sem Cadastro</div>
       <h1 id="hero-heading">Converta Arquivos <span class="accent">na Hora.</span><br/>Sem Upload. Sem Custo.</h1>
       <p class="hero-sub">PNG ↔ JPG · PDF ↔ Imagem · Texto ↔ Imagem · Comprimir PDF · Juntar PDF · Word → PDF — tudo no seu navegador.</p>
-      <a href="#converters" class="btn-primary">Start Converting ↓</a>
+      <a href="#converters" class="btn-primary">Comece a Converter ↓</a>
     </div>
     <div class="hero-ticker" aria-hidden="true">
       <div class="ticker-track">
@@ -109,8 +109,8 @@
   <!-- ======== CONVERTER TABS ======== -->
   <section class="converters-section" id="converters" aria-labelledby="converters-heading">
     <div class="container">
-      <h2 id="converters-heading" class="section-title">Choose a Converter</h2>
-      <p class="section-sub">Pick any tool below. Files never leave your device.</p>
+      <h2 id="converters-heading" class="section-title">Escolha um Conversor</h2>
+      <p class="section-sub">Escolha uma ferramenta abaixo. Seus arquivos nunca saem do seu dispositivo.</p>
 
       <div class="tab-grid" role="tablist" aria-label="Ferramentas de conversão">
         <button class="tab-btn active" role="tab" aria-selected="true"  aria-controls="tab-png2jpg"  data-tab="png2jpg">PNG para JPG</button>
@@ -133,67 +133,67 @@
       <!-- ---- PNG to JPG ---- -->
       <div class="tab-panel active" id="tab-png2jpg" role="tabpanel" aria-labelledby="tab-btn-png2jpg">
         <div class="panel-card">
-          <h3>PNG → JPG Converter</h3>
-          <p class="panel-desc">Convert PNG images to JPG format with custom quality settings.</p>
+          <h3>Conversor PNG → JPG</h3>
+          <p class="panel-desc">Converta imagens PNG para o formato JPG com configurações de qualidade personalizadas.</p>
           <label class="drop-zone" id="dz-png2jpg" for="file-png2jpg">
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
-              <div class="dz-text">Drop PNG file here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .png</div>
+              <div class="dz-text">Solte o arquivo PNG aqui ou <span>procure</span></div>
+              <div class="dz-hint">Suporta: .png</div>
             </div>
             <input type="file" id="file-png2jpg" accept=".png,image/png" hidden />
           </label>
           <div class="options-row">
-            <label>Quality: <span id="q-png2jpg-val">92</span>%
+            <label>Qualidade: <span id="q-png2jpg-val">92</span>%
               <input type="range" id="q-png2jpg" min="10" max="100" value="92" class="slider" />
             </label>
-            <label>Background color (for transparent):
+            <label>Cor de fundo (para transparência):
               <input type="color" id="bg-png2jpg" value="#ffffff" class="color-input" />
             </label>
           </div>
           <div class="preview-area" id="prev-png2jpg"></div>
-          <button class="btn-convert" id="btn-png2jpg" disabled>Convert & Download JPG</button>
+          <button class="btn-convert" id="btn-png2jpg" disabled>Converter e Baixar JPG</button>
         </div>
       </div>
 
       <!-- ---- JPG to PNG ---- -->
       <div class="tab-panel" id="tab-jpg2png" role="tabpanel">
         <div class="panel-card">
-          <h3>JPG → PNG Converter</h3>
-          <p class="panel-desc">Convert JPG/JPEG images to lossless PNG format.</p>
+          <h3>Conversor JPG → PNG</h3>
+          <p class="panel-desc">Converta imagens JPG/JPEG para o formato PNG sem perda de qualidade.</p>
           <label class="drop-zone" id="dz-jpg2png" for="file-jpg2png">
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
-              <div class="dz-text">Drop JPG file here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .jpg, .jpeg</div>
+              <div class="dz-text">Solte o arquivo JPG aqui ou <span>procure</span></div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg</div>
             </div>
             <input type="file" id="file-jpg2png" accept=".jpg,.jpeg,image/jpeg" hidden />
           </label>
           <div class="preview-area" id="prev-jpg2png"></div>
-          <button class="btn-convert" id="btn-jpg2png" disabled>Convert & Download PNG</button>
+          <button class="btn-convert" id="btn-jpg2png" disabled>Converter e Baixar PNG</button>
         </div>
       </div>
 
       <!-- ---- PDF to Image ---- -->
       <div class="tab-panel" id="tab-pdf2img" role="tabpanel">
         <div class="panel-card">
-          <h3>PDF → Image Converter</h3>
-          <p class="panel-desc">Convert each page of a PDF into a high-quality PNG image.</p>
+          <h3>Conversor PDF → Imagem</h3>
+          <p class="panel-desc">Converta cada página de um PDF em uma imagem PNG de alta qualidade.</p>
           <label class="drop-zone" id="dz-pdf2img" for="file-pdf2img">
             <div class="dz-inner">
               <div class="dz-icon">📄</div>
-              <div class="dz-text">Drop PDF file here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .pdf</div>
+              <div class="dz-text">Solte o arquivo PDF aqui ou <span>procure</span></div>
+              <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdf2img" accept=".pdf,application/pdf" hidden />
           </label>
           <div class="options-row">
-            <label>Scale (DPI): <span id="scale-pdf2img-val">2x</span>
+            <label>Escala (DPI): <span id="scale-pdf2img-val">2x</span>
               <input type="range" id="scale-pdf2img" min="1" max="4" value="2" step="0.5" class="slider" />
             </label>
           </div>
           <div class="preview-area" id="prev-pdf2img"></div>
-          <button class="btn-convert" id="btn-pdf2img" disabled>Convert Pages to PNG</button>
+          <button class="btn-convert" id="btn-pdf2img" disabled>Converter Páginas para PNG</button>
           <div id="pdf2img-progress" class="progress-wrap" hidden>
             <div class="progress-bar"><div class="progress-fill" id="pdf2img-fill"></div></div>
             <span id="pdf2img-status"></span>
@@ -204,18 +204,18 @@
       <!-- ---- Image to PDF ---- -->
       <div class="tab-panel" id="tab-img2pdf" role="tabpanel">
         <div class="panel-card">
-          <h3>Image → PDF Converter</h3>
-          <p class="panel-desc">Combine one or more images into a single PDF document.</p>
+          <h3>Conversor Imagem → PDF</h3>
+          <p class="panel-desc">Combine uma ou mais imagens em um único documento PDF.</p>
           <label class="drop-zone" id="dz-img2pdf" for="file-img2pdf">
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
-              <div class="dz-text">Drop images here or <span>browse</span></div>
+              <div class="dz-text">Solte as imagens aqui ou <span>procure</span></div>
               <div class="dz-hint">Supports: .jpg, .jpeg, .png, .webp (multiple files)</div>
             </div>
             <input type="file" id="file-img2pdf" accept="image/*" multiple hidden />
           </label>
           <div class="preview-area" id="prev-img2pdf"></div>
-          <button class="btn-convert" id="btn-img2pdf" disabled>Convert to PDF & Download</button>
+          <button class="btn-convert" id="btn-img2pdf" disabled>Converter para PDF e Baixar</button>
         </div>
       </div>
 
@@ -265,18 +265,18 @@
       <!-- ---- Image to Text (OCR) ---- -->
       <div class="tab-panel" id="tab-img2txt" role="tabpanel">
         <div class="panel-card">
-          <h3>Image → Text (OCR)</h3>
-          <p class="panel-desc">Extract text from images using Tesseract OCR — all in your browser.</p>
+          <h3>Imagem → Texto (OCR)</h3>
+          <p class="panel-desc">Extraia texto de imagens usando OCR do Tesseract — tudo diretamente no seu navegador.</p>
           <label class="drop-zone" id="dz-img2txt" for="file-img2txt">
             <div class="dz-inner">
               <div class="dz-icon">🔍</div>
-              <div class="dz-text">Drop image here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .jpg, .jpeg, .png, .webp, .bmp</div>
+              <div class="dz-text">Solte a imagem aqui ou <span>procure</span></div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp, .bmp</div>
             </div>
             <input type="file" id="file-img2txt" accept="image/*" hidden />
           </label>
           <div class="options-row">
-            <label>Language:
+            <label>Idioma:
               <select id="img2txt-lang">
                 <option value="eng">English</option>
                 <option value="hin">Hindi</option>
@@ -291,12 +291,12 @@
             <span id="ocr-status"></span>
           </div>
           <div class="preview-area" id="prev-img2txt"></div>
-          <button class="btn-convert" id="btn-img2txt" disabled>Extract Text</button>
+          <button class="btn-convert" id="btn-img2txt" disabled>Extrair Texto</button>
           <div id="ocr-result-wrap" hidden>
-            <textarea id="ocr-result" rows="8" readonly placeholder="Extracted text will appear here..."></textarea>
+            <textarea id="ocr-result" rows="8" readonly placeholder="O texto extraído aparecerá aqui..."></textarea>
             <div class="btn-row">
-              <button class="btn-secondary" id="btn-copy-ocr">Copy Text</button>
-              <button class="btn-convert" id="btn-dl-ocr">Download .txt</button>
+              <button class="btn-secondary" id="btn-copy-ocr">Copiar Texto</button>
+              <button class="btn-convert" id="btn-dl-ocr">Baixar .txt</button>
             </div>
           </div>
         </div>
@@ -305,12 +305,12 @@
       <!-- ---- PDF to Text ---- -->
       <div class="tab-panel" id="tab-pdf2txt" role="tabpanel">
         <div class="panel-card">
-          <h3>PDF → Text Extractor</h3>
-          <p class="panel-desc">Extract all text content from a PDF document instantly.</p>
+          <h3>PDF → Extrair Texto</h3>
+          <p class="panel-desc">Extraia instantaneamente todo o conteúdo de texto de um documento PDF.</p>
           <label class="drop-zone" id="dz-pdf2txt" for="file-pdf2txt">
             <div class="dz-inner">
               <div class="dz-icon">📑</div>
-              <div class="dz-text">Drop PDF file here or <span>browse</span></div>
+              <div class="dz-text">Solte o arquivo PDF aqui ou <span>procure</span></div>
               <div class="dz-hint">Supports: .pdf</div>
             </div>
             <input type="file" id="file-pdf2txt" accept=".pdf,application/pdf" hidden />
@@ -319,11 +319,11 @@
             <div class="progress-bar"><div class="progress-fill" id="pdf2txt-fill"></div></div>
             <span id="pdf2txt-status"></span>
           </div>
-          <button class="btn-convert" id="btn-pdf2txt" disabled>Extract Text</button>
+          <button class="btn-convert" id="btn-pdf2txt" disabled>Extrair Texto</button>
           <div id="pdf2txt-result-wrap" hidden>
             <textarea id="pdf2txt-result" rows="10" readonly></textarea>
             <div class="btn-row">
-              <button class="btn-secondary" id="btn-copy-pdf2txt">Copy Text</button>
+              <button class="btn-secondary" id="btn-copy-pdf2txt">Copiar Texto</button>
               <button class="btn-convert" id="btn-dl-pdf2txt">Download .txt</button>
             </div>
           </div>
@@ -333,11 +333,11 @@
       <!-- ---- Text to PDF ---- -->
       <div class="tab-panel" id="tab-txt2pdf" role="tabpanel">
         <div class="panel-card">
-          <h3>Text → PDF Generator</h3>
-          <p class="panel-desc">Convert plain text or rich content into a downloadable PDF.</p>
+          <h3>Texto → PDF</h3>
+          <p class="panel-desc">Converta texto simples ou conteúdo formatado em um PDF para baixar.</p>
           <div class="form-group">
-            <label for="txt2pdf-title">Document Title (optional)</label>
-            <input type="text" id="txt2pdf-title" placeholder="My Document" />
+            <label for="txt2pdf-title">Título do Documento (opcional)</label>
+            <input type="text" id="txt2pdf-title" placeholder="Meu Documento" />
           </div>
           <div class="form-group">
             <label for="txt2pdf-text">Content</label>
@@ -383,9 +383,9 @@
               <input type="number" id="resize-h" placeholder="e.g. 600" min="1" max="8000" />
             </label>
             <label class="checkbox-label">
-              <input type="checkbox" id="resize-lock" checked /> Lock aspect ratio
+              <input type="checkbox" id="resize-lock" checked /> Manter proporção
             </label>
-            <label>Output Format
+            <label>Formato de Saída
               <select id="resize-fmt">
                 <option value="image/png">PNG</option>
                 <option value="image/jpeg">JPG</option>
@@ -395,15 +395,15 @@
           </div>
           <div id="resize-info" class="info-badge"></div>
           <div class="preview-area" id="prev-resize"></div>
-          <button class="btn-convert" id="btn-resize" disabled>Resize & Download</button>
+          <button class="btn-convert" id="btn-resize" disabled>Redimensionar e Baixar</button>
         </div>
       </div>
 
       <!-- ---- Compress Image ---- -->
       <div class="tab-panel" id="tab-compress" role="tabpanel">
         <div class="panel-card">
-          <h3>Image Compressor</h3>
-          <p class="panel-desc">Reduce image file size while preserving quality.</p>
+          <h3>Compressor de Imagem</h3>
+          <p class="panel-desc">Reduza o tamanho do arquivo de imagem preservando a qualidade.</p>
           <label class="drop-zone" id="dz-compress" for="file-compress">
             <div class="dz-inner">
               <div class="dz-icon">🗜️</div>
@@ -419,46 +419,46 @@
           </div>
           <div id="compress-stats" class="info-badge" hidden></div>
           <div class="preview-area" id="prev-compress"></div>
-          <button class="btn-convert" id="btn-compress" disabled>Compress & Download</button>
+          <button class="btn-convert" id="btn-compress" disabled>Comprimir e Baixar</button>
         </div>
       </div>
 
       <!-- ---- Merge Images ---- -->
       <div class="tab-panel" id="tab-merge" role="tabpanel">
         <div class="panel-card">
-          <h3>Merge Images</h3>
-          <p class="panel-desc">Stitch multiple images together vertically or horizontally.</p>
+          <h3>Juntar Imagens</h3>
+          <p class="panel-desc">Junte várias imagens verticalmente ou horizontalmente.</p>
           <label class="drop-zone" id="dz-merge" for="file-merge">
             <div class="dz-inner">
               <div class="dz-icon">🔗</div>
-              <div class="dz-text">Drop images here or <span>browse</span></div>
+              <div class="dz-text">Solte as imagens aqui ou <span>procure</span></div>
               <div class="dz-hint">Supports: .jpg, .jpeg, .png (multiple files)</div>
             </div>
             <input type="file" id="file-merge" accept="image/*" multiple hidden />
           </label>
           <div class="options-row">
-            <label>Direction:
+            <label>Direção:
               <select id="merge-dir">
-                <option value="vertical">Vertical (top to bottom)</option>
-                <option value="horizontal">Horizontal (left to right)</option>
+                <option value="vertical">Vertical (de cima para baixo)</option>
+                <option value="horizontal">Horizontal (da esquerda para a direita)</option>
               </select>
             </label>
-            <label>Gap (px):
+            <label>Espaçamento (px):
               <input type="number" id="merge-gap" value="0" min="0" max="100" style="width:70px" />
             </label>
-            <label>Gap Color:
+            <label>Cor do Espaçamento:
               <input type="color" id="merge-gap-color" value="#ffffff" class="color-input" />
             </label>
           </div>
           <div class="preview-area" id="prev-merge"></div>
-          <button class="btn-convert" id="btn-merge" disabled>Merge & Download PNG</button>
+          <button class="btn-convert" id="btn-merge" disabled>Juntar e Baixar PNG</button>
         </div>
       </div>
 
       <!-- ---- PDF Resizer ---- -->
       <div class="tab-panel" id="tab-pdfresize" role="tabpanel">
         <div class="panel-card">
-          <h3>PDF Resizer</h3>
+          <h3>Redimensionador de PDF</h3>
           <p class="panel-desc">Change the page dimensions of every page in a PDF — convert to A4, A3, Letter, Legal, or any custom size. Content is scaled to fit the new page. File storage size is not the focus here — use PDF Compressor for that.</p>
           <label class="drop-zone" id="dz-pdfresize" for="file-pdfresize">
             <div class="dz-inner">
@@ -515,7 +515,7 @@
       <!-- ---- PDF Merger ---- -->
       <div class="tab-panel" id="tab-pdfmerge" role="tabpanel">
         <div class="panel-card">
-          <h3>PDF Merger</h3>
+          <h3>Juntar PDFs</h3>
           <p class="panel-desc">Combine multiple PDF files into one single PDF. Drag to reorder files before merging. Optionally set a target output file size.</p>
           <label class="drop-zone" id="dz-pdfmerge" for="file-pdfmerge">
             <div class="dz-inner">
@@ -528,7 +528,7 @@
           <div id="pdfmerge-list" class="merge-file-list" hidden></div>
           <div class="target-size-row">
             <label class="checkbox-label">
-              <input type="checkbox" id="pdfmerge-targetsize-enable" /> Set target file size for merged PDF
+              <input type="checkbox" id="pdfmerge-targetsize-enable" /> Definir tamanho alvo para o PDF combinado
             </label>
             <div id="pdfmerge-targetsize-wrap" class="targetsize-inputs" style="display:none">
               <input type="number" id="pdfmerge-targetkb" min="50" max="999999" placeholder="e.g. 2000" />
@@ -536,7 +536,7 @@
                 <option value="kb">KB</option>
                 <option value="mb">MB</option>
               </select>
-              <span class="targetsize-hint">⚠️ Image quality will be adjusted to reach the target. Layout stays unchanged.</span>
+              <span class="targetsize-hint">⚠️ A qualidade das imagens será ajustada para atingir o tamanho desejado. O layout permanecerá inalterado.</span>
             </div>
           </div>
           <div id="pdfmerge-info" class="info-badge" hidden></div>
@@ -544,14 +544,14 @@
             <div class="progress-bar"><div class="progress-fill" id="pdfmerge-fill"></div></div>
             <span id="pdfmerge-status"></span>
           </div>
-          <button class="btn-convert" id="btn-pdfmerge" disabled>Merge PDFs &amp; Download</button>
+          <button class="btn-convert" id="btn-pdfmerge" disabled>Juntar PDFs &amp; Baixar</button>
         </div>
       </div>
 
       <!-- ---- PDF Compressor ---- -->
       <div class="tab-panel" id="tab-pdfcompress" role="tabpanel">
         <div class="panel-card">
-          <h3>PDF Compressor</h3>
+          <h3>Compressor de PDF</h3>
           <p class="panel-desc">Reduce your PDF file size (KB/MB) for email, uploads, or forms. Page dimensions stay exactly the same — only image quality is optimized. Choose a preset level or set an exact target size.</p>
           <label class="drop-zone" id="dz-pdfcompress" for="file-pdfcompress">
             <div class="dz-inner">
@@ -641,37 +641,37 @@
   <!-- ======== FEATURES ======== -->
   <section class="features-section" id="features" aria-labelledby="features-heading">
     <div class="container">
-      <h2 id="features-heading" class="section-title">Why FileFlux?</h2>
+      <h2 id="features-heading" class="section-title">Por que escolher o ConverteAqui?</h2>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feat-icon">🔒</div>
-          <h3>100% Private</h3>
-          <p>All conversions happen in your browser. Your files never reach any server. Complete privacy, guaranteed.</p>
+          <h3>100% Privado</h3>
+          <p>Todas as conversões acontecem no seu navegador. Seus arquivos nunca chegam a nenhum servidor. Privacidade completa, garantida.</p>
         </div>
         <div class="feature-card">
           <div class="feat-icon">⚡</div>
-          <h3>Blazing Fast</h3>
-          <p>No waiting for uploads or server processing. Conversions are near-instant, even for large files.</p>
+          <h3>Extremamente Rápido</h3>
+          <p>Sem esperar por uploads ou processamento em servidores. As conversões são quase instantâneas, mesmo para arquivos grandes.</p>
         </div>
         <div class="feature-card">
           <div class="feat-icon">🆓</div>
-          <h3>Always Free</h3>
-          <p>No subscriptions. No limits. No watermarks. No login required. Completely free forever.</p>
+          <h3>Sempre Grátis</h3>
+          <p>Sem assinaturas. Sem limites. Sem marcas d'água. Sem necessidade de login. Completamente grátis.</p>
         </div>
         <div class="feature-card">
           <div class="feat-icon">📱</div>
-          <h3>Works Everywhere</h3>
-          <p>Optimized for mobile, tablet and desktop. Use it on any device with a modern browser.</p>
+          <h3>Funciona em Qualquer Lugar</h3>
+          <p>Otimizado para celular, tablet e computador. Use em qualquer dispositivo com um navegador moderno.</p>
         </div>
         <div class="feature-card">
           <div class="feat-icon">🌐</div>
-          <h3>Works Offline</h3>
-          <p>Once loaded, most features work without an internet connection. Perfect for on-the-go use.</p>
+          <h3>Funciona Offline</h3>
+          <p>Depois de carregado, a maioria dos recursos funciona sem conexão com a internet. Perfeito para usar em qualquer lugar.</p>
         </div>
         <div class="feature-card">
           <div class="feat-icon">🎨</div>
-          <h3>16+ Tools</h3>
-          <p>One stop for all your file conversion needs — images, PDFs, text, and more. Always growing.</p>
+          <h3>16+ Ferramentas</h3>
+          <p>Tudo o que você precisa para converter arquivos — imagens, PDFs, textos e muito mais. E sempre adicionando novos recursos.</p>
         </div>
       </div>
     </div>
@@ -680,22 +680,22 @@
   <!-- ======== FAQ ======== -->
   <section class="faq-section" id="faq" aria-labelledby="faq-heading">
     <div class="container">
-      <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+      <h2 id="faq-heading" class="section-title">Perguntas Frequentes</h2>
       <div class="faq-list">
         <details class="faq-item">
-          <summary>Are my files uploaded to any server?</summary>
-          <p>No. All processing happens entirely inside your browser using JavaScript. Your files never leave your device and are never sent to any server.</p>
+          <summary>Meus arquivos são enviados para algum servidor?</summary>
+          <p>Não. Todo o processamento acontece diretamente no seu navegador usando JavaScript. Seus arquivos nunca saem do seu dispositivo e nunca são enviados para nenhum servidor.</p>
         </details>
         <details class="faq-item">
-          <summary>Is FileFlux really free with no limits?</summary>
-          <p>Yes! FileFlux is completely free with no file size limits (beyond your browser's memory), no daily caps, and no watermarks on outputs.</p>
+          <summary>O ConverteAqui é realmente gratuito e sem limites?</summary>
+          <p>Sim! O ConverteAqui é completamente gratuito e sem limites de tamanho de arquivos (depende da memória do seu navegador), sem limites diários, e sem marcas d'água nos resultados.</p>
         </details>
         <details class="faq-item">
-          <summary>How does Image to Text (OCR) work?</summary>
+          <summary>Como funciona o Imagem → Texto (OCR)?</summary>
           <p>We use Tesseract.js, a powerful open-source OCR engine that runs directly in your browser. It supports English, Hindi, French, German, Spanish and more.</p>
         </details>
         <details class="faq-item">
-          <summary>What image formats are supported?</summary>
+          <summary>Quais formatos de imagem são suportados?</summary>
           <p>FileFlux supports PNG, JPG/JPEG, WebP, and BMP for most tools. PDF support includes reading and generating multi-page documents.</p>
         </details>
         <details class="faq-item">
