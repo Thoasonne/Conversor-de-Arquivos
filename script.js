@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setupDropZone("dz-pdf2img", "file-pdf2img", function (file) {
       if (!file || file.type !== "application/pdf") {
-        showToast("Please select a PDF file.", "error"); return;
+        showToast("Selecione um arquivo PDF.", "error"); return;
       }
       _file = file;
       markDropZone("dz-pdf2img", file.name);
@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       try {
         convertBtn.disabled = true;
-        convertBtn.textContent = "Processing...";
+        convertBtn.textContent = "Processando...";
         if (progressWrap) progressWrap.hidden = false;
         if (prevArea) prevArea.innerHTML = "";
 
@@ -571,10 +571,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (resultWrap) resultWrap.hidden = false;
         showToast("Text extracted!", "success");
       } catch (err) {
-        showToast("OCR failed: " + err.message, "error");
+        showToast("Falha no OCR: " + err.message, "error");
       } finally {
         convertBtn.disabled = false;
-        convertBtn.textContent = "Extract Text";
+        convertBtn.textContent = "Extrair Texto";
         if (progressWrap) progressWrap.hidden = true;
       }
     });
@@ -582,7 +582,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (btnCopy) {
       btnCopy.addEventListener("click", function () {
         if (resultTA) navigator.clipboard.writeText(resultTA.value);
-        showToast("Copied to clipboard!", "info");
+        showToast("Texto copiado!", "info");
       });
     }
     if (btnDl) {
@@ -590,7 +590,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!resultTA) return;
         var blob = new Blob([resultTA.value], { type: "text/plain" });
         triggerDownload(URL.createObjectURL(blob), "extracted_text.txt");
-        showToast("Text file downloaded!", "success");
+        showToast("Arquivo de texto baixado!", "success");
       });
     }
   })();
@@ -621,7 +621,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     convertBtn.addEventListener("click", async function () {
       if (!_file || typeof pdfjsLib === "undefined") {
-        showToast("PDF.js not loaded. Check your connection.", "error"); return;
+        showToast("PDF.js não foi carregado. Verifique sua conexão.", "error"); return;
       }
       try {
         convertBtn.disabled = true;
@@ -635,7 +635,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (var i = 1; i <= total; i++) {
           setProgress("pdf2txt-fill", "pdf2txt-status",
-            Math.round((i / total) * 100), "Page " + i + "/" + total + "...");
+            Math.round((i / total) * 100), "Página " + i + "/" + total + "...");
           var page    = await pdf.getPage(i);
           var content = await page.getTextContent();
           var text    = content.items.map(function (item) { return item.str; }).join(" ");
@@ -644,7 +644,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (resultTA) resultTA.value = full.trim();
         if (resultWrap) resultWrap.hidden = false;
-        showToast("Text extracted!", "success");
+        showToast("Texto extraído!", "success");
       } catch (err) {
         showToast("Extraction failed: " + err.message, "error");
       } finally {
@@ -798,7 +798,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!_file) return;
       try {
         convertBtn.disabled = true;
-        convertBtn.textContent = "Resizing...";
+        convertBtn.textContent = "Redimensionando...";
         var img    = await loadImageFromFile(_file);
         var w      = parseInt(wInput ? wInput.value : _origW) || _origW;
         var h      = parseInt(hInput ? hInput.value : _origH) || _origH;
@@ -840,7 +840,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setupDropZone("dz-compress", "file-compress", function (file) {
       if (!file || !file.type.startsWith("image/")) {
-        showToast("Please select a valid image.", "error"); return;
+        showToast("Selecione uma imagem válida.", "error"); return;
       }
       _file = file;
       markDropZone("dz-compress", file.name);
@@ -858,7 +858,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!_file) return;
       try {
         convertBtn.disabled = true;
-        convertBtn.textContent = "Compressing...";
+        convertBtn.textContent = "Comprimindo...";
         var img     = await loadImageFromFile(_file);
         var canvas  = document.createElement("canvas");
         canvas.width  = img.naturalWidth;
@@ -873,9 +873,9 @@ document.addEventListener("DOMContentLoaded", function () {
           statsEl.hidden = false;
         }
         triggerDownload(URL.createObjectURL(blob), basename(_file.name) + "_compressed.jpg");
-        showToast("Compressed & downloaded!", "success");
+        showToast("Comprimido e baixado!", "success");
       } catch (err) {
-        showToast("Compression failed: " + err.message, "error");
+        showToast("Falha na compressão: " + err.message, "error");
       } finally {
         convertBtn.disabled = false;
         convertBtn.textContent = "Compress & Download";
