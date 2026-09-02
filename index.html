@@ -90,12 +90,12 @@
     <div class="container hero-content">
       <div class="hero-badge">🔒 100% no Navegador · Sem Upload · Sem Cadastro</div>
       <h1 id="hero-heading">Converta Arquivos <span class="accent">na Hora.</span><br/>Sem Upload. Sem Custo.</h1>
-      <p class="hero-sub">PNG ↔ JPG · PDF ↔ Imagem · Texto ↔ Imagem · Compressão de PDFs · Fusão de PDFs · Word → PDF — tudo no seu navegador.</p>
+      <p class="hero-sub">PNG ↔ JPG · PDF ↔ Imagem · Texto ↔ Imagem · Comprimir PDFs · Juntar PDFs · Word → PDF — tudo no seu navegador.</p>
       <a href="#converters" class="btn-primary">Comece a Converter ↓</a>
     </div>
     <div class="hero-ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>PNG→JPG</span><span>JPG→PNG</span><span>PDF→Imagem</span><span>Imagem→PDF</span><span>Texto→Imagem</span><span>Imagem→Texto</span><span>PDF→Texto</span><span>Texto→PDF</span><span>Redimensionamento de Imagem</span><span>Compressão de Imagens</span><span>Juntar Imagens</span><span>Redimensionador de PDFs</span><span>Fusão de PDFs</span><span>Compressor de PDFs</span><span>DOCX→PDF</span><span>PNG→JPG</span><span>JPG→PNG</span><span>PDF→Imagem</span><span>Imagem→PDF</span><span>Texto→Imagem</span><span>Imagem→Texto</span><span>PDF→Texto</span><span>Texto→PDF</span><span>Redimensionar Imagens</span><span>Compressão de Imagens</span><span>Juntar Imagens</span><span>Redimensionar PDFs</span><span>Juntar PDFs</span>
+        <span>PNG→JPG</span><span>JPG→PNG</span><span>PDF→Imagem</span><span>Imagem→PDF</span><span>Texto→Imagem</span><span>Imagem→Texto</span><span>PDF→Texto</span><span>Texto→PDF</span><span>Redimensionamento de Imagem</span><span>Comprimir Imagens</span><span>Juntar Imagens</span><span>Redimensionador de PDFs</span><span>Juntar PDFs</span><span>Compressor de PDFs</span><span>DOCX→PDF</span><span>PNG→JPG</span><span>JPG→PNG</span><span>PDF→Imagem</span><span>Imagem→PDF</span><span>Texto→Imagem</span><span>Imagem→Texto</span><span>PDF→Texto</span><span>Texto→PDF</span><span>Redimensionar Imagens</span><span>Comprimir Imagens</span><span>Juntar Imagens</span><span>Redimensionar PDFs</span><span>Juntar PDFs</span>
       </div>
     </div>
   </section>
@@ -204,7 +204,7 @@
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
               <div class="dz-text">Solte as imagens aqui ou <span>procure</span></div>
-              <div class="dz-hint">Supports: .jpg, .jpeg, .png, .webp (multiple files)</div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp (multiple files)</div>
             </div>
             <input type="file" id="file-img2pdf" accept="image/*" multiple hidden />
           </label>
@@ -216,14 +216,14 @@
       <!-- ---- Text to Image ---- -->
       <div class="tab-panel" id="tab-txt2img" role="tabpanel">
         <div class="panel-card">
-          <h3>Text → Image Converter</h3>
-          <p class="panel-desc">Render text on a canvas and download as PNG.</p>
+          <h3>Texto para Imagem</h3>
+          <p class="panel-desc">Renderize o texto em um canvas e faça o download como PNG.</p>
           <div class="form-group">
-            <label for="txt2img-text">Your Text</label>
-            <textarea id="txt2img-text" rows="6" placeholder="Type or paste your text here..."></textarea>
+            <label for="txt2img-text">Seu texto</label>
+            <textarea id="txt2img-text" rows="6" placeholder="Escreva ou cole seu texto aqui..."></textarea>
           </div>
           <div class="options-grid">
-            <label>Font Family
+            <label>Fontes
               <select id="txt2img-font">
                 <option value="Syne, sans-serif">Syne (Modern)</option>
                 <option value="Georgia, serif">Georgia (Serif)</option>
@@ -232,25 +232,25 @@
                 <option value="'Times New Roman', serif">Times New Roman</option>
               </select>
             </label>
-            <label>Font Size (px)
+            <label>Tamnho da Fonte (px)
               <input type="number" id="txt2img-size" value="28" min="10" max="120" />
             </label>
-            <label>Text Color
+            <label>Cor do Texto
               <input type="color" id="txt2img-color" value="#111111" class="color-input" />
             </label>
-            <label>Background Color
+            <label>Cor do Fundo
               <input type="color" id="txt2img-bg" value="#ffffff" class="color-input" />
             </label>
-            <label>Canvas Width (px)
+            <label>Largura da Imagem (px)
               <input type="number" id="txt2img-w" value="800" min="100" max="4000" />
             </label>
-            <label>Padding (px)
+            <label>Preenchimento (px)
               <input type="number" id="txt2img-pad" value="40" min="0" max="200" />
             </label>
           </div>
           <div class="preview-area" id="prev-txt2img"></div>
           <div class="btn-row">
-            <button class="btn-secondary" id="btn-txt2img-preview">Preview</button>
+            <button class="btn-secondary" id="btn-txt2img-preview">Prévia</button>
             <button class="btn-convert" id="btn-txt2img-dl">Download PNG</button>
           </div>
         </div>
@@ -259,7 +259,7 @@
       <!-- ---- Image to Text (OCR) ---- -->
       <div class="tab-panel" id="tab-img2txt" role="tabpanel">
         <div class="panel-card">
-          <h3>Imagem → Texto (OCR)</h3>
+          <h3>Imagem para Texto</h3>
           <p class="panel-desc">Extraia texto de imagens usando OCR do Tesseract — tudo diretamente no seu navegador.</p>
           <label class="drop-zone" id="dz-img2txt" for="file-img2txt">
             <div class="dz-inner">
@@ -305,7 +305,7 @@
             <div class="dz-inner">
               <div class="dz-icon">📑</div>
               <div class="dz-text">Solte o arquivo PDF aqui ou <span>procure</span></div>
-              <div class="dz-hint">Supports: .pdf</div>
+              <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdf2txt" accept=".pdf,application/pdf" hidden />
           </label>
@@ -327,7 +327,7 @@
       <!-- ---- Text to PDF ---- -->
       <div class="tab-panel" id="tab-txt2pdf" role="tabpanel">
         <div class="panel-card">
-          <h3>Texto → PDF</h3>
+          <h3>Texto para PDF</h3>
           <p class="panel-desc">Converta texto simples ou conteúdo formatado em um PDF para baixar.</p>
           <div class="form-group">
             <label for="txt2pdf-title">Título do Documento (opcional)</label>
@@ -335,45 +335,45 @@
           </div>
           <div class="form-group">
             <label for="txt2pdf-text">Content</label>
-            <textarea id="txt2pdf-text" rows="10" placeholder="Type or paste your content here..."></textarea>
+            <textarea id="txt2pdf-text" rows="10" placeholder="Digite ou cole seu conteúdo aqui..."></textarea>
           </div>
           <div class="options-grid">
-            <label>Font Size
+            <label>Tamanho da Fonte
               <input type="number" id="txt2pdf-size" value="12" min="8" max="36" />
             </label>
-            <label>Page Size
+            <label>Tamanho da Página
               <select id="txt2pdf-page">
                 <option value="a4">A4</option>
                 <option value="letter">Letter</option>
                 <option value="a3">A3</option>
               </select>
             </label>
-            <label>Text Color
+            <label>Cor do Texto
               <input type="color" id="txt2pdf-color" value="#111111" class="color-input" />
             </label>
           </div>
-          <button class="btn-convert" id="btn-txt2pdf">Generate & Download PDF</button>
+          <button class="btn-convert" id="btn-txt2pdf">Gerar e Baixar o PDF</button>
         </div>
       </div>
 
       <!-- ---- Resize Image ---- -->
       <div class="tab-panel" id="tab-resize" role="tabpanel">
         <div class="panel-card">
-          <h3>Image Resizer</h3>
-          <p class="panel-desc">Resize images to exact pixel dimensions or by percentage.</p>
+          <h3>Redimensionador de Imagens</h3>
+          <p class="panel-desc">Redimensione imagens para dimensões exatas em pixels ou por porcentagem.</p>
           <label class="drop-zone" id="dz-resize" for="file-resize">
             <div class="dz-inner">
               <div class="dz-icon">📐</div>
-              <div class="dz-text">Drop image here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .jpg, .jpeg, .png, .webp</div>
+              <div class="dz-text">Solte a imagem aqui ou <span>Procurar</span></div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp</div>
             </div>
             <input type="file" id="file-resize" accept="image/*" hidden />
           </label>
           <div class="options-grid">
-            <label>Width (px)
+            <label>Largura (px)
               <input type="number" id="resize-w" placeholder="e.g. 800" min="1" max="8000" />
             </label>
-            <label>Height (px)
+            <label>Altura (px)
               <input type="number" id="resize-h" placeholder="e.g. 600" min="1" max="8000" />
             </label>
             <label class="checkbox-label">
@@ -401,13 +401,13 @@
           <label class="drop-zone" id="dz-compress" for="file-compress">
             <div class="dz-inner">
               <div class="dz-icon">🗜️</div>
-              <div class="dz-text">Drop image here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .jpg, .jpeg, .png, .webp</div>
+              <div class="dz-text">Solte a imagem aqui ou <span>Procure</span></div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp</div>
             </div>
             <input type="file" id="file-compress" accept="image/*" hidden />
           </label>
           <div class="options-row">
-            <label>Quality: <span id="q-compress-val">80</span>%
+            <label>Qualidade: <span id="q-compress-val">80</span>%
               <input type="range" id="q-compress" min="1" max="100" value="80" class="slider" />
             </label>
           </div>
@@ -426,7 +426,7 @@
             <div class="dz-inner">
               <div class="dz-icon">🔗</div>
               <div class="dz-text">Solte as imagens aqui ou <span>procure</span></div>
-              <div class="dz-hint">Supports: .jpg, .jpeg, .png (multiple files)</div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png (multiple files)</div>
             </div>
             <input type="file" id="file-merge" accept="image/*" multiple hidden />
           </label>
@@ -453,12 +453,12 @@
       <div class="tab-panel" id="tab-pdfresize" role="tabpanel">
         <div class="panel-card">
           <h3>Redimensionador de PDF</h3>
-          <p class="panel-desc">Change the page dimensions of every page in a PDF — convert to A4, A3, Letter, Legal, or any custom size. Content is scaled to fit the new page. File storage size is not the focus here — use PDF Compressor for that.</p>
+          <p class="panel-desc">Altere as dimensões de todas as páginas de um PDF — converta para A4, A3, Letter, Legal ou qualquer tamanho personalizado. O conteúdo é redimensionado para se ajustar à nova página. O tamanho do arquivo não é o foco aqui; para isso, utilize o PDF Compressor.</p>
           <label class="drop-zone" id="dz-pdfresize" for="file-pdfresize">
             <div class="dz-inner">
               <div class="dz-icon">📏</div>
-              <div class="dz-text">Drop PDF file here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .pdf</div>
+              <div class="dz-text">Solte o arquivo PDF aqui ou <span>browse</span></div>
+              <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdfresize" accept=".pdf,application/pdf" hidden />
           </label>
@@ -515,7 +515,7 @@
             <div class="dz-inner">
               <div class="dz-icon">📎</div>
               <div class="dz-text">Drop PDF files here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .pdf (select multiple files)</div>
+              <div class="dz-hint">Suporta: .pdf (select multiple files)</div>
             </div>
             <input type="file" id="file-pdfmerge" accept=".pdf,application/pdf" multiple hidden />
           </label>
@@ -550,8 +550,8 @@
           <label class="drop-zone" id="dz-pdfcompress" for="file-pdfcompress">
             <div class="dz-inner">
               <div class="dz-icon">🗜️</div>
-              <div class="dz-text">Drop PDF file here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .pdf</div>
+              <div class="dz-text">Solte o arquivo PDF aqui ou <span>browse</span></div>
+              <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdfcompress" accept=".pdf,application/pdf" hidden />
           </label>
@@ -603,7 +603,7 @@
             <div class="dz-inner">
               <div class="dz-icon">📝</div>
               <div class="dz-text">Drop DOCX file here or <span>browse</span></div>
-              <div class="dz-hint">Supports: .docx</div>
+              <div class="dz-hint">Suporta: .docx</div>
             </div>
             <input type="file" id="file-docx2pdf" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden />
           </label>
