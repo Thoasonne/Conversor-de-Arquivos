@@ -364,7 +364,7 @@
           <label class="drop-zone" id="dz-resize" for="file-resize">
             <div class="dz-inner">
               <div class="dz-icon">📐</div>
-              <div class="dz-text">Solte a imagem aqui ou <span>Procurar</span></div>
+              <div class="dz-text">Solte a imagem aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp</div>
             </div>
             <input type="file" id="file-resize" accept="image/*" hidden />
@@ -457,13 +457,13 @@
           <label class="drop-zone" id="dz-pdfresize" for="file-pdfresize">
             <div class="dz-inner">
               <div class="dz-icon">📏</div>
-              <div class="dz-text">Solte o arquivo PDF aqui ou <span>browse</span></div>
+              <div class="dz-text">Solte o arquivo PDF aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdfresize" accept=".pdf,application/pdf" hidden />
           </label>
           <div class="options-grid">
-            <label>Target Page Size
+            <label>Tamanho da Página
               <select id="pdfresize-size">
                 <option value="a4">A4 (210 × 297 mm)</option>
                 <option value="a3">A3 (297 × 420 mm)</option>
@@ -474,7 +474,7 @@
                 <option value="custom">Custom Size</option>
               </select>
             </label>
-            <label>Orientation
+            <label>Orientação
               <select id="pdfresize-orient">
                 <option value="portrait">Portrait</option>
                 <option value="landscape">Landscape</option>
@@ -486,15 +486,15 @@
             <label id="custom-h-wrap" style="display:none">Custom Height (mm)
               <input type="number" id="pdfresize-ch" value="297" min="10" max="2000" />
             </label>
-            <label>Render Quality
+            <label>Qualidade de Renderização
               <select id="pdfresize-quality">
-                <option value="1.5">Standard (faster)</option>
-                <option value="2.0" selected>High (recommended)</option>
-                <option value="3.0">Very High (slower)</option>
+                <option value="1.5">Padrão (rápido)</option>
+                <option value="2.0" selected>Alta (recomendado)</option>
+                <option value="3.0">Muito Alta (devagar)</option>
               </select>
             </label>
             <label class="checkbox-label" style="align-self:end">
-              <input type="checkbox" id="pdfresize-fitcontent" checked /> Scale content to fit new page
+              <input type="checkbox" id="pdfresize-fitcontent" checked /> Ajustar o conteúdo à nova página
             </label>
           </div>
           <div id="pdfresize-info" class="info-badge" hidden></div>
@@ -502,7 +502,7 @@
             <div class="progress-bar"><div class="progress-fill" id="pdfresize-fill"></div></div>
             <span id="pdfresize-status"></span>
           </div>
-          <button class="btn-convert" id="btn-pdfresize" disabled>Resize PDF &amp; Download</button>
+          <button class="btn-convert" id="btn-pdfresize" disabled>Redimensionar PDF &amp; Baixar</button>
         </div>
       </div>
 
@@ -510,11 +510,11 @@
       <div class="tab-panel" id="tab-pdfmerge" role="tabpanel">
         <div class="panel-card">
           <h3>Juntar PDFs</h3>
-          <p class="panel-desc">Combine multiple PDF files into one single PDF. Drag to reorder files before merging. Optionally set a target output file size.</p>
+          <p class="panel-desc">Combine vários arquivos PDF em um único PDF. Arraste para reordenar os arquivos antes de mesclá-los. Opcionalmente, defina um tamanho de arquivo de saída.</p>
           <label class="drop-zone" id="dz-pdfmerge" for="file-pdfmerge">
             <div class="dz-inner">
               <div class="dz-icon">📎</div>
-              <div class="dz-text">Drop PDF files here or <span>browse</span></div>
+              <div class="dz-text">Solte os arquivos aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .pdf (select multiple files)</div>
             </div>
             <input type="file" id="file-pdfmerge" accept=".pdf,application/pdf" multiple hidden />
@@ -546,29 +546,29 @@
       <div class="tab-panel" id="tab-pdfcompress" role="tabpanel">
         <div class="panel-card">
           <h3>Compressor de PDF</h3>
-          <p class="panel-desc">Reduce your PDF file size (KB/MB) for email, uploads, or forms. Page dimensions stay exactly the same — only image quality is optimized. Choose a preset level or set an exact target size.</p>
+          <p class="panel-desc">Reduza o tamanho do seu arquivo PDF (KB/MB) para e-mail, uploads ou formulários. As dimensões das páginas permanecem exatamente as mesmas — apenas a qualidade da imagem é otimizada. Escolha um nível predefinido ou defina um tamanho exato desejado.</p>
           <label class="drop-zone" id="dz-pdfcompress" for="file-pdfcompress">
             <div class="dz-inner">
               <div class="dz-icon">🗜️</div>
-              <div class="dz-text">Solte o arquivo PDF aqui ou <span>browse</span></div>
+              <div class="dz-text"> <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdfcompress" accept=".pdf,application/pdf" hidden />
           </label>
 
           <div class="compress-mode-toggle">
-            <button class="mode-btn active" id="compressmode-preset" type="button">Use Preset Level</button>
-            <button class="mode-btn" id="compressmode-target" type="button">Set Target Size</button>
+            <button class="mode-btn active" id="compressmode-preset" type="button">Usar Nível Predefinido</button>
+            <button class="mode-btn" id="compressmode-target" type="button">Definir Tamanho Desejado</button>
           </div>
 
           <div id="compress-preset-panel">
             <div class="options-grid">
-              <label>Compression Level
+              <label>Nível de Compressão
                 <select id="pdfcompress-level">
-                  <option value="screen">Maximum — Screen (smallest file, ~72 dpi)</option>
-                  <option value="ebook" selected>Balanced — eBook (~150 dpi, recommended)</option>
-                  <option value="printer">High Quality — Printer (~300 dpi)</option>
-                  <option value="prepress">Best Quality — Prepress (max quality)</option>
+                  <option value="screen">Máximo — Tela (arquivo menor, ~72 dpi)</option>
+                  <option value="ebook" selected>Equilibrado — eBook (~150 dpi, recomendado)</option>
+                  <option value="printer">Alta qualidade — Impressora (~300 dpi)</option>
+                  <option value="prepress">Melhor Qualidade — Pré-impressão (qualidade máxima)</option>
                 </select>
               </label>
             </div>
@@ -590,32 +590,32 @@
             <div class="progress-bar"><div class="progress-fill" id="pdfcompress-fill"></div></div>
             <span id="pdfcompress-status"></span>
           </div>
-          <button class="btn-convert" id="btn-pdfcompress" disabled>Compress PDF &amp; Download</button>
+          <button class="btn-convert" id="btn-pdfcompress" disabled>Comprimir PDF &amp; Baixar</button>
         </div>
       </div>
 
       <!-- ---- DOCX → PDF ---- -->
       <div class="tab-panel" id="tab-docx2pdf" role="tabpanel">
         <div class="panel-card">
-          <h3>DOCX → PDF Converter</h3>
-          <p class="panel-desc">Convert a Word (.docx) document to a PDF. Headings, paragraphs, bold/italic, lists and tables are preserved.</p>
+          <h3>Word para PDF</h3>
+          <p class="panel-desc">Converta um documento do Word (.docx) em PDF. Títulos, parágrafos, negrito/itálico, listas e tabelas são preservados.</p>
           <label class="drop-zone" id="dz-docx2pdf" for="file-docx2pdf">
             <div class="dz-inner">
               <div class="dz-icon">📝</div>
-              <div class="dz-text">Drop DOCX file here or <span>browse</span></div>
+              <div class="dz-text">Arraste e solte o arquivo DOCX aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .docx</div>
             </div>
             <input type="file" id="file-docx2pdf" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden />
           </label>
           <div class="options-grid">
-            <label>Page Size
+            <label>Tamanho da Página
               <select id="docx2pdf-page">
                 <option value="a4">A4</option>
                 <option value="letter">Letter</option>
                 <option value="a3">A3</option>
               </select>
             </label>
-            <label>Font Size (pt)
+            <label>Tamanho da Fonte (pt)
               <input type="number" id="docx2pdf-fontsize" value="11" min="7" max="24" />
             </label>
           </div>
@@ -624,7 +624,7 @@
             <div class="progress-bar"><div class="progress-fill" id="docx2pdf-fill"></div></div>
             <span id="docx2pdf-status"></span>
           </div>
-          <button class="btn-convert" id="btn-docx2pdf" disabled>Convert to PDF &amp; Download</button>
+          <button class="btn-convert" id="btn-docx2pdf" disabled>Converter para PDF &amp; Baixar</button>
         </div>
       </div>
 
