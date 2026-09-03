@@ -132,7 +132,7 @@
           <label class="drop-zone" id="dz-png2jpg" for="file-png2jpg">
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
-              <div class="dz-text">Solte o arquivo PNG aqui ou <span></span></div>
+              <div class="dz-text">Arraste e solte o arquivo PNG aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .png</div>
             </div>
             <input type="file" id="file-png2jpg" accept=".png,image/png" hidden />
@@ -146,7 +146,7 @@
             </label>
           </div>
           <div class="preview-area" id="prev-png2jpg"></div>
-          <button class="btn-convert" id="btn-png2jpg" disabled>Converter e Baixar JPG</button>
+          <button class="btn-convert" id="btn-png2jpg" disabled>Converter &amp; Baixar JPG</button>
         </div>
       </div>
 
@@ -158,13 +158,13 @@
           <label class="drop-zone" id="dz-jpg2png" for="file-jpg2png">
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
-              <div class="dz-text">Solte o arquivo JPG aqui ou <span>procurar</span></div>
+              <div class="dz-text">Arraste e solte o arquivo JPG aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .jpg, .jpeg</div>
             </div>
             <input type="file" id="file-jpg2png" accept=".jpg,.jpeg,image/jpeg" hidden />
           </label>
           <div class="preview-area" id="prev-jpg2png"></div>
-          <button class="btn-convert" id="btn-jpg2png" disabled>Converter e Baixar PNG</button>
+          <button class="btn-convert" id="btn-jpg2png" disabled>Converter &amp; Baixar PNG</button>
         </div>
       </div>
 
@@ -176,7 +176,7 @@
           <label class="drop-zone" id="dz-pdf2img" for="file-pdf2img">
             <div class="dz-inner">
               <div class="dz-icon">📄</div>
-              <div class="dz-text">Solte o arquivo PDF aqui ou <span>procurar</span></div>
+              <div class="dz-text">Arraste e solte o arquivo PDF aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdf2img" accept=".pdf,application/pdf" hidden />
@@ -203,13 +203,13 @@
           <label class="drop-zone" id="dz-img2pdf" for="file-img2pdf">
             <div class="dz-inner">
               <div class="dz-icon">🖼️</div>
-              <div class="dz-text">Solte as imagens aqui ou <span>procurar</span></div>
-              <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp (multiple files)</div>
+              <div class="dz-text">Arraste e solte as imagens aqui ou <span>procurar</span></div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp (múltiplos arquivos)</div>
             </div>
             <input type="file" id="file-img2pdf" accept="image/*" multiple hidden />
           </label>
           <div class="preview-area" id="prev-img2pdf"></div>
-          <button class="btn-convert" id="btn-img2pdf" disabled>Converter para PDF e Baixar</button>
+          <button class="btn-convert" id="btn-img2pdf" disabled>Converter para PDF &amp; Baixar</button>
         </div>
       </div>
 
@@ -251,7 +251,7 @@
           <div class="preview-area" id="prev-txt2img"></div>
           <div class="btn-row">
             <button class="btn-secondary" id="btn-txt2img-preview">Prévia</button>
-            <button class="btn-convert" id="btn-txt2img-dl">Download PNG</button>
+            <button class="btn-convert" id="btn-txt2img-dl">Baixar PNG</button>
           </div>
         </div>
       </div>
@@ -264,7 +264,7 @@
           <label class="drop-zone" id="dz-img2txt" for="file-img2txt">
             <div class="dz-inner">
               <div class="dz-icon">🔍</div>
-              <div class="dz-text">Solte a imagem aqui ou <span>procurar</span></div>
+              <div class="dz-text">Arraste e solte a imagem aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp, .bmp</div>
             </div>
             <input type="file" id="file-img2txt" accept="image/*" hidden />
@@ -304,7 +304,7 @@
           <label class="drop-zone" id="dz-pdf2txt" for="file-pdf2txt">
             <div class="dz-inner">
               <div class="dz-icon">📑</div>
-              <div class="dz-text">Solte o arquivo PDF aqui ou <span>procurar</span></div>
+              <div class="dz-text">Arraste e solte o arquivo PDF aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdf2txt" accept=".pdf,application/pdf" hidden />
@@ -352,7 +352,7 @@
               <input type="color" id="txt2pdf-color" value="#111111" class="color-input" />
             </label>
           </div>
-          <button class="btn-convert" id="btn-txt2pdf">Gerar e Baixar o PDF</button>
+          <button class="btn-convert" id="btn-txt2pdf">Gerar &amp; Baixar o PDF</button>
         </div>
       </div>
 
@@ -364,17 +364,17 @@
           <label class="drop-zone" id="dz-resize" for="file-resize">
             <div class="dz-inner">
               <div class="dz-icon">📐</div>
-              <div class="dz-text">Solte a imagem aqui ou <span>procurar</span></div>
+              <div class="dz-text">Arraste e solte a imagem aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp</div>
             </div>
             <input type="file" id="file-resize" accept="image/*" hidden />
           </label>
           <div class="options-grid">
             <label>Largura (px)
-              <input type="number" id="resize-w" placeholder="e.g. 800" min="1" max="8000" />
+              <input type="number" id="resize-w" placeholder="ex: 800" min="1" max="8000" />
             </label>
             <label>Altura (px)
-              <input type="number" id="resize-h" placeholder="e.g. 600" min="1" max="8000" />
+              <input type="number" id="resize-h" placeholder="ex: 600" min="1" max="8000" />
             </label>
             <label class="checkbox-label">
               <input type="checkbox" id="resize-lock" checked /> Manter proporção
@@ -389,7 +389,7 @@
           </div>
           <div id="resize-info" class="info-badge"></div>
           <div class="preview-area" id="prev-resize"></div>
-          <button class="btn-convert" id="btn-resize" disabled>Redimensionar e Baixar</button>
+          <button class="btn-convert" id="btn-resize" disabled>Redimensionar &amp; Baixar</button>
         </div>
       </div>
 
@@ -401,7 +401,7 @@
           <label class="drop-zone" id="dz-compress" for="file-compress">
             <div class="dz-inner">
               <div class="dz-icon">🗜️</div>
-              <div class="dz-text">Solte a imagem aqui ou <span>procurar</span></div>
+              <div class="dz-text">Arraste e solte a imagem aqui ou <span>procurar</span></div>
               <div class="dz-hint">Suporta: .jpg, .jpeg, .png, .webp</div>
             </div>
             <input type="file" id="file-compress" accept="image/*" hidden />
@@ -413,7 +413,7 @@
           </div>
           <div id="compress-stats" class="info-badge" hidden></div>
           <div class="preview-area" id="prev-compress"></div>
-          <button class="btn-convert" id="btn-compress" disabled>Comprimir e Baixar</button>
+          <button class="btn-convert" id="btn-compress" disabled>Comprimir &amp; Baixar</button>
         </div>
       </div>
 
@@ -425,8 +425,8 @@
           <label class="drop-zone" id="dz-merge" for="file-merge">
             <div class="dz-inner">
               <div class="dz-icon">🔗</div>
-              <div class="dz-text">Solte as imagens aqui ou <span>procurar</span></div>
-              <div class="dz-hint">Suporta: .jpg, .jpeg, .png (multiple files)</div>
+              <div class="dz-text">Arraste e solte as imagens aqui ou <span>procurar</span></div>
+              <div class="dz-hint">Suporta: .jpg, .jpeg, .png (múltiplos arquivos)</div>
             </div>
             <input type="file" id="file-merge" accept="image/*" multiple hidden />
           </label>
@@ -445,7 +445,7 @@
             </label>
           </div>
           <div class="preview-area" id="prev-merge"></div>
-          <button class="btn-convert" id="btn-merge" disabled>Juntar e Baixar PNG</button>
+          <button class="btn-convert" id="btn-merge" disabled>Juntar &amp; Baixar PNG</button>
         </div>
       </div>
 
@@ -457,7 +457,7 @@
           <label class="drop-zone" id="dz-pdfresize" for="file-pdfresize">
             <div class="dz-inner">
               <div class="dz-icon">📏</div>
-              <div class="dz-text">Solte o arquivo PDF aqui ou <span>pesquisar</span></div>
+              <div class="dz-text">Arraste e solte o arquivo PDF aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdfresize" accept=".pdf,application/pdf" hidden />
@@ -476,8 +476,8 @@
             </label>
             <label>Orientação
               <select id="pdfresize-orient">
-                <option value="portrait">Portrait</option>
-                <option value="landscape">Landscape</option>
+                <option value="portrait">Retrato (Vertical)</option>
+                <option value="landscape">Paisagem (Horizontal)</option>
               </select>
             </label>
             <label id="custom-w-wrap" style="display:none">Custom Width (mm)
@@ -514,7 +514,7 @@
           <label class="drop-zone" id="dz-pdfmerge" for="file-pdfmerge">
             <div class="dz-inner">
               <div class="dz-icon">📎</div>
-              <div class="dz-text">Solte os arquivos aqui ou <span>pesquisar</span></div>
+              <div class="dz-text">Arraste e solte os arquivos aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .pdf (select multiple files)</div>
             </div>
             <input type="file" id="file-pdfmerge" accept=".pdf,application/pdf" multiple hidden />
@@ -550,7 +550,7 @@
           <label class="drop-zone" id="dz-pdfcompress" for="file-pdfcompress">
             <div class="dz-inner">
               <div class="dz-icon">🗜️</div>
-              <div class="dz-text"> <span>pesquisar</span></div>
+              <div class="dz-text">Arraste e solte os arquivos aqui ou <span>pesquisar</span></div>
               <div class="dz-hint">Suporta: .pdf</div>
             </div>
             <input type="file" id="file-pdfcompress" accept=".pdf,application/pdf" hidden />
